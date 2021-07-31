@@ -1,10 +1,12 @@
 console.log("Hello!")
 
-let start
-let a=0
-function sum(n){
-    for (start = 0; start <=n; start++){
-        a += start
-        console.log(a)
+function sum(n) {
+    let result = 0;
+    for (let i = 0; i <= n; i++) {
+        result += i;
     }
+    return result;
 }
+console.log(sum(1))
+console.log(sum(3))
+console.log(sum(10))
