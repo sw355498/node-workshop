@@ -12,9 +12,9 @@ let doWork = function (job, timer, isOK) {
     });
   };
   
-  let dt = new Date();
-  console.log(`開始工作 at ${dt.toISOString()}`);
-  // 刷牙 -> 吃早餐 -> 寫功課
+let dt = new Date();
+console.log(`開始工作 at ${dt.toISOString()}`);
+// 刷牙 -> 吃早餐 -> 寫功課
   
 /* 寫法一 */
 //   //刷牙
@@ -53,20 +53,27 @@ let doWork = function (job, timer, isOK) {
 
 /* 寫法二 */
 let job1 = doWork("刷牙", 3000, true);
-console.log(job1);
   job1
+
+    //刷牙
     .then(function (resolve){
       console.log("第 1 個函式被呼叫了", resolve);
       let job2 = doWork("吃早餐", 5000, true);
       return job2
     })
+
+    //吃早餐
     .then(function (resolve){
         console.log("第 1 個函式被呼叫了", resolve);
         let job3 = doWork("寫功課", 3000, true);
         return job3
     })
+
+    //寫功課
     .then(function (resolve){
         console.log("第 1 個函式被呼叫了", resolve);
+        let job3 = doWork("寫功課", 3000, true);
+        return job3
     })
     .catch(function (reject){
       console.log("第 2 個函式被呼叫了", reject);
