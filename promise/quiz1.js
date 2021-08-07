@@ -19,7 +19,7 @@ function syncF() {
     2.syncF();
         1.console.log(1);
         2.console.log(3);
-        *console.log(2);會先到web api接著在Queque等待
+        *console.log(2);會先到node.js底層接著在Queque等待
     3.console.log(5);
     4.console.log(2)(evnt loop檢查到stack內空了，將在Queque等待的console.log(2)搬運到stack執行)
 
