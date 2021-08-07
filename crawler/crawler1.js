@@ -3,8 +3,6 @@
 const axios = require("axios");
 const moment = require("moment");
 
-console.log(moment().format("YYYYMMDD"));
-
 axios
   .get("https://www.twse.com.tw/exchangeReport/STOCK_DAY",{
     params:{
