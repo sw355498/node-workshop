@@ -17,11 +17,15 @@ console.log(`開始工作 at ${dt.toISOString()}`);
 
 
 async function doWorking(){
-  let job1 = await doWork("刷牙", 3000, true);
-  console.log(job1);
-  let job2 = await doWork("吃早餐", 5000, true);
-  console.log(job2);
-  let job3 = await doWork("寫功課", 3000, true);
-  console.log(job3);
+  try {
+    let job1 = await doWork("刷牙", 3000, true);
+    console.log(job1);
+    let job2 = await doWork("吃早餐", 5000, false);
+    console.log(job2);
+    let job3 = await doWork("寫功課", 3000, true);
+    console.log(job3);
+  }catch (e){
+    console.log(e);
+  }
 }
 doWorking()
