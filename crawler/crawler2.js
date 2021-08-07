@@ -19,7 +19,7 @@ new Promise ((resolve,reject) => {
   })
 })
 .then((stockCode)=>{
-  return raxios.get("https://www.twse.com.tw/exchangeReport/STOCK_DAY",{
+  return axios.get("https://www.twse.com.tw/exchangeReport/STOCK_DAY",{
     params:{
     response: "json",
     date: moment().format("YYYYMMDD"),
