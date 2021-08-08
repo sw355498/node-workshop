@@ -18,19 +18,20 @@ async function resultStock(){
       }
     })
   })
-    try{
-      let result = await axios.get("https://www.twse.com.tw/exchangeReport/STOCK_DAY",{
-          params:{
-            response: "json",
-            date: moment().format("YYYYMMDD"),
-            stockNo: stockCode,
-          },
-      });  
-      console.log(result.data);
-    }
-    catch(e){
-      console.log(e);
-    }
+
+  try{
+    let result = await axios.get("https://www.twse.com.tw/exchangeReport/STOCK_DAY",{
+        params:{
+          response: "json",
+          date: moment().format("YYYYMMDD"),
+          stockNo: stockCode,
+        },
+    }); 
+
+    console.log(result.data);
+  }catch(e){
+    console.log(e);
+  }
 }
 resultStock()
 
