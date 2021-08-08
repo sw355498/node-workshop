@@ -13,7 +13,7 @@ new Promise ((resolve,reject) => {
         reject(err);
     }
     else{
-        resolve(stockCode);
+        resolve(stockCode.trim());
     }
   })
 })

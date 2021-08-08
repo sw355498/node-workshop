@@ -13,7 +13,7 @@ async function resultStock(){
           reject(err);
       }
       else{
-          resolve(stockCode);
+          resolve(stockCode.trim());
       }
     })
   })
