@@ -1,6 +1,7 @@
 let brand = "Tesla";
 let model = "Model 3";
 let color = "red";
+let price = "1000000"
 let owner = "";
 
 function showBrand() {
@@ -13,9 +14,13 @@ function showModel() {
 function showColor() {
   return color;
 }
+function showprice(){
+  return price
+}
+
 
 function setOwner(name){
-    owner = name;
+    owner = hello;
 }
 
 function showOwner() {
@@ -27,4 +32,5 @@ module.exports = {
   showBrand,
   showModel,
   showColor,
+  showprice,
 };
