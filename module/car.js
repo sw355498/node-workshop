@@ -1,36 +1,34 @@
-let brand = "Tesla";
-let model = "Model 3";
-let color = "red";
-let price = "1000000"
-let owner = "";
+let brand = 'Tesla'
+let model = 'Model 3'
+let color = 'red'
+let price = '1000000'
+let owner = ''
 
 function showBrand() {
-  return brand;
+  return brand
 }
 
 function showModel() {
-  return model;
+  return model
 }
 function showColor() {
-  return color;
+  return color
 }
-function showprice(){
+function showprice() {
   return price
 }
 
-
-function setOwner(name){
-    owner = hello;
+function setOwner(name) {
+  owner = hello
 }
 
 function showOwner() {
-  return owner;
+  return owner
 }
-
 
 module.exports = {
   showBrand,
   showModel,
   showColor,
   showprice,
-};
+}
