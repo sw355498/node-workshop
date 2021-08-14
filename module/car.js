@@ -19,7 +19,7 @@ function showprice() {
 }
 
 function setOwner(name) {
-  owner = hello
+  owner = name
 }
 
 function showOwner() {
