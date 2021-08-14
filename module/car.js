@@ -1,34 +1,7 @@
-let brand = 'Tesla'
-let model = 'Model 3'
-let color = 'red'
-let price = '1000000'
-let owner = ''
+/* 引入car2 */
+const car2 = require("./car2")
+let car = require("./car2")
 
-function showBrand() {
-  return brand
-}
+console.log("我是car_Tesla")
 
-function showModel() {
-  return model
-}
-function showColor() {
-  return color
-}
-function showprice() {
-  return price
-}
-
-function setOwner(name) {
-  owner = name
-}
-
-function showOwner() {
-  return owner
-}
-
-module.exports = {
-  showBrand,
-  showModel,
-  showColor,
-  showprice,
-}
+car2.setOwner("Paul")
